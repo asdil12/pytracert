@@ -21,7 +21,7 @@ class DTag(base.DNSGeoBase):
 			match = DTag.applre.match(hostname)
 			if match:
 				city_code, country_code = match.group(1,2)
-				returninfo = base.returninfo
+				returninfo = base.returninfo.copy()
 				country = base.get_country_by_iso(country_code)
 				returninfo['country'] = country['name']
 				returninfo['lat'] = country['lat']

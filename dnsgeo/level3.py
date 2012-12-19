@@ -19,7 +19,7 @@ class Level3(base.DNSGeoBase):
 			match = Level3.applre.match(hostname)
 			if match:
 				city_raw = match.group(1)
-				returninfo = base.returninfo
+				returninfo = base.returninfo.copy()
 				jsondb = json.load(open('./database/level3.json'))
 				c = jsondb[city_raw]
 				returninfo['city'] = c['city']
@@ -28,4 +28,5 @@ class Level3(base.DNSGeoBase):
 				returninfo['country'] = c['country']
 				returninfo['company'] = 'Level 3 Communications, Inc'
 				returninfo['info'] = 'carrier'
+				return returninfo
 		raise exceptions.NotApplicable()
