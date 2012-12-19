@@ -1,0 +1,8 @@
+Requirements:
+
+pygeoip
+
+
+Get database from:
+http://www.maxmind.com/download/geoip/database/
+http://www.ohadpr.com/2010/04/countries-approximate-lat-lon-and-iso-3166-1-alpha-2/index.html
