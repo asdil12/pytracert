@@ -4,7 +4,7 @@ import base
 import exceptions
 
 import re
-import json
+import simplejson as json
 
 """
 network: foo.%CITY1.Level3.net

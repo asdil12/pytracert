@@ -4,7 +4,7 @@ import base
 import exceptions
 
 import re
-import json
+import simplejson as json
 
 """
 network: ge-3-3-0.mpr1.%CITY1.%COUNTRY.above.net

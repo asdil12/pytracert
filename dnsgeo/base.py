@@ -2,7 +2,7 @@
 
 import exceptions
 
-import json
+import simplejson as json
 import os
 import csv
 
