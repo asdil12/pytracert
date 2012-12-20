@@ -24,6 +24,7 @@ testdomains = [
 	"decix2.superkabel.de",
 	"ae-5.r21.frnkge03.de.bb.gin.ntt.net",
 	"POS7-0.GW3.DEN4.ALTER.NET",
+	"0.xe-2-3-0.BR3.CHI13.ALTER.NET",
 ]
 
 print

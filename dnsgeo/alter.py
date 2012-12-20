@@ -13,7 +13,7 @@ network: 0.xe-7-1-0.BR3.NYC4.ALTER.NET
 
 class Level3(base.DNSGeoBase):
 	priority = 80
-	applre = re.compile(r".*\.(\w*)\d\.ALTER\.NET$")
+	applre = re.compile(r".*\.([A-Z]*)\d+\.ALTER\.NET$")
 	def lookup(self, ip=None, hostname=None):
 		if hostname:
 			match = Level3.applre.match(hostname)
