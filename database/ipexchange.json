@@ -1,0 +1,6 @@
+{
+	"NBG":{"lat": 49.3890993, "city": "Nuremberg", "lng": 11.1751681, "country_code": "DE", "country": "Germany"},
+	"FRA":{"lat": 49.6812452, "city": "Frankfurt", "lng": 10.5267012, "country_code": "DE", "country": "Germany"},
+	"MUC":{"lat": 48.1442022, "city": "Munich", "lng": 11.5549232, "country_code": "DE", "country": "Germany"},
+	"NL-AMS":{"lat": 52.3710088, "city": "Amsterdam", "lng": 4.9001115, "country_code": "NL", "country": "The Netherlands"}
+}
