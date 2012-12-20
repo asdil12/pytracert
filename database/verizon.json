@@ -1,5 +1,6 @@
 {
 	"NYC":{"lat": 40.7305991, "city": "New York City", "lng": -73.9865812, "country_code": "US", "country": "United States of America"},
 	"CHI":{"lat": 41.8756208, "city": "Chicago", "lng": -87.6243706, "country_code": "US", "country": "United States of America"},
+	"PHX":{"lat": 33.8872355, "city": "Phoenix", "lng": -112.071987034466, "country_code": "US", "country": "United States of America"},
 	"DEN":{"lat": 39.69929035, "city": "Denver", "lng": -104.932915868853, "country_code": "US", "country": "United States of America"}
 }
