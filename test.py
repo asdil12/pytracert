@@ -17,6 +17,9 @@ testdomains = [
 	"xr-bay1-te1-1.x-win.dfn.de",
 	"xe-1-1-0.rt-decix-1.m-online.net",
 	"decix2.superkabel.de",
+
+	# isp's
+	"hos-tr2.ex3k13.rz1.hetzner.de",
 ]
 
 print
