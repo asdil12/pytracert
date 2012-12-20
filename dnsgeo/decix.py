@@ -7,7 +7,7 @@ import simplejson as json
 import re
 
 class DECIX(base.DNSGeoBase):
-	priority = 20
+	priority = 60
 	applre = re.compile(r"de-?cix", re.I)
 	applre_num = re.compile(r"de-?cix-?(\d)", re.I)
 	def lookup(self, ip=None, hostname=None):
