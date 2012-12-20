@@ -1,0 +1,14 @@
+{
+	"FRNKGE":{"lat": 50.12128335, "city": "Frankfurt am Main", "lng": 8.66188597160349, "country_code": "DE", "country": "Germany"},
+	"NYCMNY":{"lat": 40.7305991, "city": "New York City", "lng": -73.9865812, "country_code": "US", "country": "United States of America"},
+	"LONDEN":{"lat": 51.4893201, "city": "London", "lng": -0.143553657577338, "country_code": "GB", "country": "United Kingdom"},
+	"NEWTHK":{"lat": 22.2644116, "city": "Hong Kong", "lng": 114.1670609, "country_code": "HK", "country": "Hong Kong"},
+	"STTLWA":{"lat": 39.0303881, "city": "Sterling", "lng": -77.4017789, "country_code": "US", "country": "United States of America"},
+	"SNJSCA":{"lat": 37.3438502, "city": "San Jose", "lng": -121.8831349, "country_code": "US", "country": "United States of America"},
+	"LSANCA":{"lat": 37.3541132, "city": "Santa Clara", "lng": -121.9551744, "country_code": "US", "country": "United States of America"},
+	"OSAKJP":{"lat": 34.6852929, "city": "Osaka", "lng": 135.5146944, "country_code": "JP", "country": "Japan"},
+	"TOKYJP":{"lat": 35.6800712, "city": "Tokyo", "lng": 139.7685224, "country_code": "JP", "country": "Japan"},
+	"AMSTNL":{"lat": 52.3710088, "city": "Amsterdam", "lng": 4.9001115, "country_code": "NL", "country": "The Netherlands"},
+	"MIAMFL":{"lat": 25.7742658, "city": "Miami", "lng": -80.1936589, "country_code": "US", "country": "United States of America"},
+	"ASBNVA":{"lat": 39.0437192, "city": "Ashburn", "lng": -77.4874899, "country_code": "US", "country": "United States of America"}
+}

@@ -9,6 +9,10 @@ if len(sys.argv) > 1:
 
 
 testdomains = [
+	# isp's
+	"hos-tr2.ex3k13.rz1.hetzner.de",
+
+	# carriers
 	"bt-sa1-i.BT.DE.NET.DTAG.DE",
 	"xe-10-1-0.bar1.Munich1.Level3.net",
 	"er1.ams1.nl.above.net",
@@ -17,9 +21,7 @@ testdomains = [
 	"xr-bay1-te1-1.x-win.dfn.de",
 	"xe-1-1-0.rt-decix-1.m-online.net",
 	"decix2.superkabel.de",
-
-	# isp's
-	"hos-tr2.ex3k13.rz1.hetzner.de",
+	"ae-5.r21.frnkge03.de.bb.gin.ntt.net",
 ]
 
 print
