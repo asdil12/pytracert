@@ -1,10 +1,16 @@
 #!/usr/bin/python2
 
 import urllib2
-import json
+import simplejson as json
 import sys
 
-j = urllib2.urlopen("http://nominatim.openstreetmap.org/search?q=%s&format=json&addressdetails=1&limit=1&accept-language=en" % " ".join(sys.argv[1:]).replace(' ', '+')).read()
+if len(sys.argv) > 2:
+	key = sys.argv[1]
+	query = sys.argv[2]
+else:
+	query = sys.argv[1]
+
+j = urllib2.urlopen("http://nominatim.openstreetmap.org/search?q=%s&format=json&addressdetails=1&limit=1&accept-language=en" % query.replace(' ', '+')).read()
 try:
 	c = json.loads(j)
 	c = c[0]
@@ -13,16 +19,19 @@ try:
 	try:
 		city = a['city']
 	except:
-		city = sys.argv[1].split(',')[0]
+		city = query.split(',')[0]
 
-	city = city.replace(' ', '')
-	print '"'+sys.argv[1].split(',')[0]+'":'+json.dumps({
-		'city': city,
-		'country_code': a['country_code'].upper(),
-		'country': a['country'],
-		'lat': float(c['lat']),
-		'lng': float(c['lon'])
-	})+","
+	#cityk = city.replace(' ', '')
+	try:
+		print '"'+key+'":'+json.dumps({
+			'city': city,
+			'country_code': a['country_code'].upper(),
+			'country': a['country'],
+			'lat': float(c['lat']),
+			'lng': float(c['lon'])
+		})+","
+	except NameError:
+		pass
 
 	print >> sys.stderr, {
 		'city': city,
