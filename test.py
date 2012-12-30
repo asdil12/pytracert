@@ -26,6 +26,8 @@ testdomains = [
 	"POS7-0.GW3.DEN4.ALTER.NET",
 	"0.xe-2-3-0.BR3.CHI13.ALTER.NET",
 	"te4-3.ccr01.phl03.atlas.cogentco.com",
+	"sjo-bb1-link.telia.net",
+	"prag-bb1-link.telia.net",
 ]
 
 print

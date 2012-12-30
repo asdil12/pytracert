@@ -1,0 +1,14 @@
+{
+	"ash":{"lat": 39.0437192, "city": "Ashburn", "lng": -77.4874899, "country_code": "US", "country": "United States of America"},
+	"dls":{"lat": 32.7801052, "city": "Dallas", "lng": -96.8000082, "country_code": "US", "country": "United States of America"},
+	"atl":{"lat": 33.7490987, "city": "Atlanta", "lng": -84.3901849, "country_code": "US", "country": "United States of America"},
+	"ldn":{"lat": 51.5072759, "city": "London", "lng": -0.1276597, "country_code": "GB", "country": "United Kingdom"},
+	"adm":{"lat": 52.3710088, "city": "Amsterdam", "lng": 4.9001115, "country_code": "NL", "country": "The Netherlands"},
+	"prag":{"lat": 50.084819, "city": "Prague", "lng": 14.4177247, "country_code": "CZ", "country": "Czech Republic"},
+	"hbg":{"lat": 53.5437641, "city": "Hamburg", "lng": 10.0099133, "country_code": "DE", "country": "Germany"},
+	"s":{"lat": 59.3307611, "city": "Stockholm", "lng": 18.0613099, "country_code": "SE", "country": "Sweden"},
+	"prs":{"lat": 48.8588408, "city": "Paris", "lng": 2.32003465529896, "country_code": "FR", "country": "France"},
+	"nyk":{"lat": 40.7305991, "city": "New York City", "lng": -73.9865812, "country_code": "US", "country": "United States of America"},
+	"sjo":{"lat": 37.3438502, "city": "San Jose", "lng": -121.8831349, "country_code": "US", "country": "United States of America"},
+	"ffm":{"lat": 50.12128335, "city": "Frankfurt am Main", "lng": 8.66188597160349, "country_code": "DE", "country": "Germany"}
+}
