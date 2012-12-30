@@ -31,7 +31,6 @@ class CogentCO(base.DNSGeoBase):
 					returninfo['lng'] = c['lng']
 					returninfo['country'] = c['country']
 				except:
-					raise
 					pass
 				return returninfo
 		raise exceptions.NotApplicable()
