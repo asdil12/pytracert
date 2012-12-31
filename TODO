@@ -5,3 +5,7 @@
 - complete TeliaSonera (nodelist: http://lg.telia.net/)
 - some AT&T nodes are missing
 - complete abroad dtag (eg WAS.US = Washington)
+
+- add accuracy to dnsgeo output
+
+- add wrapper between dnsgeo and traceroute to be able to handle other info ressources (whois, geoip) depending on accuracy
