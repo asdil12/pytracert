@@ -6,7 +6,7 @@ import sys
 
 if len(sys.argv) > 2:
 	key = sys.argv[1]
-	query = sys.argv[2]
+	query = " ".join(sys.argv[2:])
 else:
 	query = sys.argv[1]
 
