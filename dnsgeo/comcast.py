@@ -24,6 +24,7 @@ class Comcast(base.DNSGeoBase):
 				state = base.get_state_by_code('us', state_code)
 				returninfo['country'] = 'United States of America'
 				returninfo['state'] = state['name']
+				returninfo['accuracy'] = 'state'
 				returninfo['lat'] = state['lat']
 				returninfo['lng'] = state['lng']
 				returninfo['company'] = 'Comcast Corporation'
@@ -32,6 +33,7 @@ class Comcast(base.DNSGeoBase):
 					jsondb = json.load(open('./database/comcast.json'))
 					c = jsondb[city_code.lower()]
 					returninfo['city'] = c['city']
+					returninfo['accuracy'] = 'city'
 					returninfo['lat'] = c['lat']
 					returninfo['lng'] = c['lng']
 				except:

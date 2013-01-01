@@ -23,6 +23,7 @@ class DFN(base.DNSGeoBase):
 				jsondb = json.load(open('./database/dfn.json'))
 				c = jsondb[city_code.upper()]
 				returninfo['city'] = c['city']
+				returninfo['accuracy'] = 'city'
 				returninfo['lat'] = c['lat']
 				returninfo['lng'] = c['lng']
 				returninfo['country'] = c['country']

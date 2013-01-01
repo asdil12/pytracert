@@ -23,6 +23,7 @@ class Plusline(base.DNSGeoBase):
 				returninfo = base.returninfo.copy()
 				country = base.get_country_by_iso(country_code)
 				returninfo['country'] = country['name']
+				returninfo['accuracy'] = 'country'
 				returninfo['lat'] = country['lat']
 				returninfo['lng'] = country['lng']
 				returninfo['company'] = 'Plus.line AG'
@@ -31,6 +32,7 @@ class Plusline(base.DNSGeoBase):
 					try:
 						city = base.get_city_by_plate(country_code, city_code)
 						returninfo['city'] = city['name']
+						returninfo['accuracy'] = 'city'
 						returninfo['lat'] = city['lat']
 						returninfo['lng'] = city['lng']
 					except:

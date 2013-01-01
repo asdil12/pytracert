@@ -24,6 +24,7 @@ class NTT(base.DNSGeoBase):
 				returninfo = base.returninfo.copy()
 				country = base.get_country_by_iso(country_code)
 				returninfo['country'] = country['name']
+				returninfo['accuracy'] = 'country'
 				returninfo['lat'] = country['lat']
 				returninfo['lng'] = country['lng']
 				returninfo['company'] = 'Nippon Telegraph and Telephone'
@@ -32,6 +33,7 @@ class NTT(base.DNSGeoBase):
 					jsondb = json.load(open('./database/ntt.json'))
 					c = jsondb[city_code.upper()]
 					returninfo['city'] = c['city']
+					returninfo['accuracy'] = 'city'
 					returninfo['lat'] = c['lat']
 					returninfo['lng'] = c['lng']
 				except:

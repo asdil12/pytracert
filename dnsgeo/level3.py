@@ -23,6 +23,7 @@ class Level3(base.DNSGeoBase):
 				jsondb = json.load(open('./database/level3.json'))
 				c = jsondb[city_raw]
 				returninfo['city'] = c['city']
+				returninfo['accuracy'] = 'city'
 				returninfo['lat'] = c['lat']
 				returninfo['lng'] = c['lng']
 				returninfo['country'] = c['country']

@@ -31,9 +31,10 @@ class Hetzner(base.DNSGeoBase):
 					if datacenter_code in range(1, 9 + 1): location = 'nuernberg'
 					elif datacenter_code in range(10, 23 + 1): location = 'falkenstein'
 					c = jsondb[location]
+					returninfo['city'] = c['city']
+					returninfo['accuracy'] = 'city'
 					returninfo['lat'] = c['lat']
 					returninfo['lng'] = c['lng']
-					returninfo['city'] = c['city']
 				except:
 					raise
 					pass

@@ -34,6 +34,7 @@ class ContentCore(base.DNSGeoBase):
 					c = jsondb[city_code.upper()]
 					returninfo['country'] = c['country']
 					returninfo['city'] = c['city']
+					returninfo['accuracy'] = 'city'
 					returninfo['lat'] = c['lat']
 					returninfo['lng'] = c['lng']
 				except:
@@ -46,6 +47,7 @@ class ContentCore(base.DNSGeoBase):
 					returninfo = base.returninfo.copy()
 					country = base.get_country_by_iso(country_code)
 					returninfo['country'] = country['name']
+					returninfo['accuracy'] = 'country'
 					returninfo['lat'] = country['lat']
 					returninfo['lng'] = country['lng']
 					returninfo['company'] = 'IP Exchange GmbH'
@@ -55,6 +57,7 @@ class ContentCore(base.DNSGeoBase):
 						key = "%s-%s" % (country_code.upper(), city_code.upper())
 						c = jsondb[key]
 						returninfo['city'] = c['city']
+						returninfo['accuracy'] = 'city'
 						returninfo['lat'] = c['lat']
 						returninfo['lng'] = c['lng']
 					except:

@@ -13,7 +13,16 @@ returninfo = {
 	'state': None,
 	'country': None,
 	'company': None,
+	'accuracy': 'none', # none, country, state, city, site
 	'info': None # carrier/dialin...
+}
+
+ACCURACY = {
+	'none':    0,
+	'country': 1,
+	'state':   2,
+	'city':    3,
+	'site':    4
 }
 
 class DNSGeoBase:
@@ -83,4 +92,3 @@ def get_city_by_plate(isocode, city_code):
 				'lat': float(e[4]),
 				'lng': float(e[5])
 			}
-

@@ -27,6 +27,7 @@ class ATT(base.DNSGeoBase):
 					jsondb = json.load(open('./database/att.json'))
 					c = jsondb[city_code.lower()]
 					returninfo['city'] = c['city']
+					returninfo['accuracy'] = 'city'
 					returninfo['lat'] = c['lat']
 					returninfo['lng'] = c['lng']
 					returninfo['country'] = c['country']

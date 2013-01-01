@@ -22,6 +22,7 @@ class AboveNet(base.DNSGeoBase):
 				returninfo = base.returninfo.copy()
 				country = base.get_country_by_iso(country_code)
 				returninfo['country'] = country['name']
+				returninfo['accuracy'] = 'country'
 				returninfo['lat'] = country['lat']
 				returninfo['lng'] = country['lng']
 				returninfo['company'] = 'AboveNet Inc'
@@ -30,6 +31,7 @@ class AboveNet(base.DNSGeoBase):
 					jsondb = json.load(open('./database/abovenet.json'))
 					c = jsondb[city_code]
 					returninfo['city'] = c['city']
+					returninfo['accuracy'] = 'city'
 					returninfo['lat'] = c['lat']
 					returninfo['lng'] = c['lng']
 				except:

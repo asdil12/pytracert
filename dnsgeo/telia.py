@@ -27,6 +27,7 @@ class TeliaSonera(base.DNSGeoBase):
 					jsondb = json.load(open('./database/telia.json'))
 					c = jsondb[city_code.lower()]
 					returninfo['city'] = c['city']
+					returninfo['accuracy'] = 'city'
 					returninfo['lat'] = c['lat']
 					returninfo['lng'] = c['lng']
 					returninfo['country'] = c['country']

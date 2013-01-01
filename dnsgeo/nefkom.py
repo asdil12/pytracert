@@ -16,6 +16,7 @@ class NEFkom(base.DNSGeoBase):
 				returninfo = base.returninfo.copy()
 				returninfo['country'] = 'Germany'
 				returninfo['city'] = 'Nuremberg'
+				returninfo['accuracy'] = 'city'
 				returninfo['info'] = 'isp'
 				returninfo['lat'] = 49.4538501
 				returninfo['lng'] = 11.0773238

@@ -22,11 +22,16 @@ class Level3(base.DNSGeoBase):
 				returninfo = base.returninfo.copy()
 				returninfo['company'] = 'Verizon'
 				returninfo['info'] = 'carrier'
-				returninfo['country'] = 'United States of America'
+				country = base.get_country_by_iso('us')
+				returninfo['country'] = country['name']
+				returninfo['accuracy'] = 'country'
+				returninfo['lat'] = country['lat']
+				returninfo['lng'] = country['lng']
 				try:
 					jsondb = json.load(open('./database/verizon.json'))
 					c = jsondb[city_code.upper()]
 					returninfo['city'] = c['city']
+					returninfo['accuracy'] = 'city'
 					returninfo['lat'] = c['lat']
 					returninfo['lng'] = c['lng']
 					returninfo['country'] = c['country']

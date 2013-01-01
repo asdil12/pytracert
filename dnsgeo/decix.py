@@ -16,7 +16,8 @@ class DECIX(base.DNSGeoBase):
 			if match:
 				returninfo = base.returninfo.copy()
 				returninfo['country'] = 'Germany'
-				returninfo['city'] = 'Frankfurt'
+				returninfo['city'] = 'Frankfurt am Main'
+				returninfo['accuracy'] = 'city'
 				returninfo['info'] = 'exchange'
 				returninfo['lat'] = 50.12128335
 				returninfo['lng'] = 8.661885971
@@ -28,6 +29,7 @@ class DECIX(base.DNSGeoBase):
 					try:
 						jsondb = json.load(open('./database/decix.json'))
 						c = jsondb[decix_code]
+						returninfo['accuracy'] = 'site'
 						returninfo['lat'] = c['lat']
 						returninfo['lng'] = c['lng']
 					except:
