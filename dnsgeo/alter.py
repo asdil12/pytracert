@@ -28,7 +28,7 @@ class Level3(base.DNSGeoBase):
 				returninfo['lat'] = country['lat']
 				returninfo['lng'] = country['lng']
 				try:
-					jsondb = json.load(open('./database/verizon.json'))
+					jsondb = json.load(open('./database/carriers/verizon.json'))
 					c = jsondb[city_code.upper()]
 					returninfo['city'] = c['city']
 					returninfo['accuracy'] = 'city'

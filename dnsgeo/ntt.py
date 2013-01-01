@@ -30,7 +30,7 @@ class NTT(base.DNSGeoBase):
 				returninfo['company'] = 'Nippon Telegraph and Telephone'
 				returninfo['info'] = 'carrier'
 				try:
-					jsondb = json.load(open('./database/ntt.json'))
+					jsondb = json.load(open('./database/carriers/ntt.json'))
 					c = jsondb[city_code.upper()]
 					returninfo['city'] = c['city']
 					returninfo['accuracy'] = 'city'

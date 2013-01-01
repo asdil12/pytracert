@@ -28,7 +28,7 @@ class AboveNet(base.DNSGeoBase):
 				returninfo['company'] = 'AboveNet Inc'
 				returninfo['info'] = 'carrier'
 				try:
-					jsondb = json.load(open('./database/abovenet.json'))
+					jsondb = json.load(open('./database/carriers/abovenet.json'))
 					c = jsondb[city_code]
 					returninfo['city'] = c['city']
 					returninfo['accuracy'] = 'city'

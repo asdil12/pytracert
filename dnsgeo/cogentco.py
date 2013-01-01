@@ -24,7 +24,7 @@ class CogentCO(base.DNSGeoBase):
 				returninfo['company'] = 'Cogent Communications, Inc.'
 				returninfo['info'] = 'carrier'
 				try:
-					jsondb = json.load(open('./database/cogentco.json'))
+					jsondb = json.load(open('./database/carriers/cogentco.json'))
 					c = jsondb[city_code.lower()]
 					returninfo['city'] = c['city']
 					returninfo['accuracy'] = 'city'

@@ -24,7 +24,7 @@ class ATT(base.DNSGeoBase):
 				returninfo['company'] = 'American Telegraph and Telephone'
 				returninfo['info'] = 'carrier'
 				try:
-					jsondb = json.load(open('./database/att.json'))
+					jsondb = json.load(open('./database/carriers/att.json'))
 					c = jsondb[city_code.lower()]
 					returninfo['city'] = c['city']
 					returninfo['accuracy'] = 'city'

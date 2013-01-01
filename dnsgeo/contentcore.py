@@ -30,7 +30,7 @@ class ContentCore(base.DNSGeoBase):
 				returninfo['company'] = 'IP Exchange GmbH'
 				returninfo['info'] = 'carrier'
 				try:
-					jsondb = json.load(open('./database/ipexchange.json'))
+					jsondb = json.load(open('./database/carriers/ipexchange.json'))
 					c = jsondb[city_code.upper()]
 					returninfo['country'] = c['country']
 					returninfo['city'] = c['city']
@@ -53,7 +53,7 @@ class ContentCore(base.DNSGeoBase):
 					returninfo['company'] = 'IP Exchange GmbH'
 					returninfo['info'] = 'carrier'
 					try:
-						jsondb = json.load(open('./database/ipexchange.json'))
+						jsondb = json.load(open('./database/carriers/ipexchange.json'))
 						key = "%s-%s" % (country_code.upper(), city_code.upper())
 						c = jsondb[key]
 						returninfo['city'] = c['city']

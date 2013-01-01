@@ -20,7 +20,7 @@ class DFN(base.DNSGeoBase):
 			if match:
 				city_code = match.group(1)
 				returninfo = base.returninfo.copy()
-				jsondb = json.load(open('./database/dfn.json'))
+				jsondb = json.load(open('./database/carriers/dfn.json'))
 				c = jsondb[city_code.upper()]
 				returninfo['city'] = c['city']
 				returninfo['accuracy'] = 'city'

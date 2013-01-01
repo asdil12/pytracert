@@ -30,7 +30,7 @@ class Comcast(base.DNSGeoBase):
 				returninfo['company'] = 'Comcast Corporation'
 				returninfo['info'] = 'carrier'
 				try:
-					jsondb = json.load(open('./database/comcast.json'))
+					jsondb = json.load(open('./database/carriers/comcast.json'))
 					c = jsondb[city_code.lower()]
 					returninfo['city'] = c['city']
 					returninfo['accuracy'] = 'city'

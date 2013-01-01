@@ -24,7 +24,7 @@ class TeliaSonera(base.DNSGeoBase):
 				returninfo['company'] = 'TeliaSonera International Carrier AB'
 				returninfo['info'] = 'carrier'
 				try:
-					jsondb = json.load(open('./database/telia.json'))
+					jsondb = json.load(open('./database/carriers/telia.json'))
 					c = jsondb[city_code.lower()]
 					returninfo['city'] = c['city']
 					returninfo['accuracy'] = 'city'
