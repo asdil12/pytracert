@@ -30,6 +30,7 @@ testdomains = [
 	"prag-bb1-link.telia.net",
 	"cr1.n54ny.ip.att.net",
 	"te1-1.c321.f.de.plusline.net",
+	"pos-0-9-0-0-cr01.seattle.wa.ibone.comcast.net",
 ]
 
 print
