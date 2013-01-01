@@ -18,7 +18,7 @@ for file in glob.glob(os.path.join(os.path.dirname(os.path.abspath(__file__)), "
 	module = __import__("%s.%s" % (__name__, name))
 	module = eval("module.%s" % name)
 	for member in dir(module):
-		if member == "DNSGeoBase":
+		if member in ["DNSGeoBase"]:
 			continue
 		if isinstance(getattr(module, member), types.ClassType):
 			cls = getattr(module, member)
