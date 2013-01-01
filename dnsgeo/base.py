@@ -48,6 +48,19 @@ def get_country_by_iso(isocode):
 		'lng': c[1]
 	}
 
+def get_state_by_code(isocode, state_code):
+	"""
+		param: ISO-3166-1 Alpha-2 country code, state_code in format common for country
+		returns: {name, lat, lng}
+	"""
+	statedb = json.load(open('./database/states/%s.json' % isocode.lower()))
+	c = statedb[state_code.upper()]
+	return {
+		'name': c[2],
+		'lat': c[0],
+		'lng': c[1]
+	}
+
 def get_available_opengeodbs():
 	"""
 		returns: [DE, AT...]

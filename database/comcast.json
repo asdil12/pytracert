@@ -1,0 +1,7 @@
+{
+	"seattle":{"lat": 47.6038321, "city": "Seattle", "lng": -122.3300624, "country_code": "US", "country": "United States of America"},
+	"denver":{"lat": 39.7391536, "city": "Denver", "lng": -104.9847034, "country_code": "US", "country": "United States of America"},
+	"dallas":{"lat": 32.7801052, "city": "Dallas", "lng": -96.8000082, "country_code": "US", "country": "United States of America"},
+	"56marietta":{"lat": 33.952602, "city": "Marietta", "lng": -84.5499327, "country_code": "US", "country": "United States of America"},
+	"ashburn":{"lat": 39.0437192, "city": "Ashburn", "lng": -77.4874899, "country_code": "US", "country": "United States of America"}
+}
