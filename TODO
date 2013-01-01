@@ -9,3 +9,5 @@
 - add accuracy to dnsgeo output
 
 - add wrapper between dnsgeo and traceroute to be able to handle other info ressources (whois, geoip) depending on accuracy
+
+- mesure udp-"ping" between nodes
