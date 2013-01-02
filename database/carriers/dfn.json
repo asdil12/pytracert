@@ -40,5 +40,6 @@
 	"BRA":{"lat": 52.272, "city": "Braunschweig", "lng": 10.530, "country_code": "DE", "country": "Germany"},
 	"AAC":{"lat": 50.7762954, "city": "Aachen", "lng": 6.0838209, "country_code": "DE", "country": "Germany"},
 	"MUE":{"lat": 51.950146, "city": "Muenster", "lng": 7.61329946871883, "country_code": "DE", "country": "Germany"},
+	"ZIB":{"lat": 52.5198535, "city": "Berlin", "lng": 13.4385964, "country_code": "DE", "country": "Germany"},
 	"HUB":{"lat": 52.4378932, "city": "Berlin", "lng": 13.5475496, "country_code": "DE", "country": "Germany"}
 }
