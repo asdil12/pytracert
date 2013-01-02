@@ -17,14 +17,6 @@ returninfo = {
 	'info': None # carrier/dialin...
 }
 
-ACCURACY = {
-	'none':    0,
-	'country': 1,
-	'state':   2,
-	'city':    3,
-	'site':    4
-}
-
 class DNSGeoBase:
 	# 0-100 - defines order of checking
 	# 0 = disabled

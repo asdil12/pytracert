@@ -1,7 +1,7 @@
 #!/usr/bin/python2
 
 from traceroute import Traceroute
-import dnsgeo
+import georesolve
 import sys
 
 def print_callback(ttl, payload):
@@ -9,7 +9,7 @@ def print_callback(ttl, payload):
 		curr_host = "%(hostname)s (%(ip)s)" % payload
 		print "%d\t%s" % (ttl, curr_host)
 		print "\t",
-		print dnsgeo.lookup(**payload)
+		print georesolve.lookup(**payload)
 	else:
 		print "%d\t*" % ttl
 
