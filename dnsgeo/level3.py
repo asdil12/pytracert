@@ -20,14 +20,17 @@ class Level3(base.DNSGeoBase):
 			if match:
 				city_raw = match.group(1)
 				returninfo = base.returninfo.copy()
-				jsondb = json.load(open('./database/carriers/level3.json'))
-				c = jsondb[city_raw]
-				returninfo['city'] = c['city']
-				returninfo['accuracy'] = 'city'
-				returninfo['lat'] = c['lat']
-				returninfo['lng'] = c['lng']
-				returninfo['country'] = c['country']
 				returninfo['company'] = 'Level 3 Communications, Inc'
 				returninfo['info'] = 'carrier'
+				try:
+					jsondb = json.load(open('./database/carriers/level3.json'))
+					c = jsondb[city_raw]
+					returninfo['city'] = c['city']
+					returninfo['accuracy'] = 'city'
+					returninfo['lat'] = c['lat']
+					returninfo['lng'] = c['lng']
+					returninfo['country'] = c['country']
+				except KeyError:
+					pass
 				return returninfo
 		raise exceptions.NotApplicable()
