@@ -1,7 +1,6 @@
 #!/usr/bin/python2
 
 import socket
-import signal
 
 class Traceroute:
 	def __init__(self, port=33434, max_hops=30, timeout=1):
@@ -16,33 +15,13 @@ class Traceroute:
 		self.callback = callback
 
 	def run(self, target):
-		class TimeoutException(Exception):
-			pass
-
-		class ICMPTimeout(TimeoutException):
-			pass
-
-		class DNSTimeout(TimeoutException):
-			pass
-
-		def timeout(maxtime, exception=TimeoutException):
-			if maxtime > 0 and not self.timeout_set:
-				def timeout_handler(signum, frame):
-					raise exception()
-				self.old_timeout_handler = signal.signal(signal.SIGALRM, timeout_handler)
-				self.timeout_set = True
-				signal.alarm(maxtime)
-			else:
-				signal.signal(signal.SIGALRM, self.old_timeout_handler)
-				self.timeout_set = False
-				signal.alarm(0)
-
 		dest_addr = socket.gethostbyname(target)
 		icmp = socket.getprotobyname('icmp')
 		udp = socket.getprotobyname('udp')
 		ttl = 1
 		while True:
 			recv_socket = socket.socket(socket.AF_INET, socket.SOCK_RAW, icmp)
+			recv_socket.settimeout(self.timeout)
 			send_socket = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, udp)
 			send_socket.setsockopt(socket.SOL_IP, socket.IP_TTL, ttl)
 			recv_socket.bind(("", self.port))
@@ -50,7 +29,6 @@ class Traceroute:
 			curr_addr = None
 			curr_name = None
 			try:
-				timeout(self.timeout, exception=ICMPTimeout)
 				_, curr_addr = recv_socket.recvfrom(512)
 				curr_addr = curr_addr[0]
 				try:
@@ -59,10 +37,9 @@ class Traceroute:
 					curr_name = curr_addr
 			except socket.error:
 				pass
-			except ICMPTimeout:
+			except socket.timeout:
 				pass
 			finally:
-				timeout(0)
 				send_socket.close()
 				recv_socket.close()
 
