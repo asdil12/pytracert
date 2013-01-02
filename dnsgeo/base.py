@@ -84,3 +84,21 @@ def get_city_by_plate(isocode, city_code):
 				'lat': float(e[4]),
 				'lng': float(e[5])
 			}
+
+def get_city_by_iata(iata_code):
+	"""
+		param: IATA 3 digit Airport code
+		returns: {name, lat, lng, country_code}
+	"""
+	iata_code = iata_code.upper()
+	csvfile = open("./database/iata.csv", 'r')
+	csvdb= csv.reader(csvfile, delimiter='|')
+	#IATA|name|country_code|lat|lng
+	for e in csvdb:
+		if e[0] == iata_code:
+			return {
+				'name': e[1],
+				'lat': float(e[3]),
+				'lng': float(e[4]),
+				'country_code': e[2].lower()
+			}
