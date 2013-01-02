@@ -31,6 +31,8 @@ testdomains = [
 	"cr1.n54ny.ip.att.net",
 	"te1-1.c321.f.de.plusline.net",
 	"pos-0-9-0-0-cr01.seattle.wa.ibone.comcast.net",
+	"nyk-s2-rou-1021.US.eurorings.net",
+	"nntr-s1-rou-1022.FR.eurorings.net",
 ]
 
 print
