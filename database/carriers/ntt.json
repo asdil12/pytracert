@@ -10,5 +10,6 @@
 	"TOKYJP":{"lat": 35.6800712, "city": "Tokyo", "lng": 139.7685224, "country_code": "JP", "country": "Japan"},
 	"AMSTNL":{"lat": 52.3710088, "city": "Amsterdam", "lng": 4.9001115, "country_code": "NL", "country": "The Netherlands"},
 	"MIAMFL":{"lat": 25.7742658, "city": "Miami", "lng": -80.1936589, "country_code": "US", "country": "United States of America"},
+	"STTLWA":{"lat": 47.6038321, "city": "Seattle", "lng": -122.3300624, "country_code": "US", "country": "United States of America"},
 	"ASBNVA":{"lat": 39.0437192, "city": "Ashburn", "lng": -77.4874899, "country_code": "US", "country": "United States of America"}
 }
