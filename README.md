@@ -1,5 +1,7 @@
 # pytracert
 
+This tool uses the reverse dns name of each traceroute node (or geoip as a fallback) to draw a route on a map.
+
 ![](https://upload.kruton.de/files/1357862718/f.png)
 
 ## Requirements:
