@@ -1,3 +1,6 @@
+> [!WARNING]
+> Moved to https://codeberg.org/asdil12/pytracert
+
 # pytracert
 
 This tool uses the reverse dns name of each traceroute node (or geoip as a fallback) to draw a route on a map.
